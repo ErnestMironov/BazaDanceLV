@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Главная</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700, 800" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/common.css">
+</head>
+<body class="page" >
+<header class="head">
+    <div class="container flex">
+        <div class="header flex">
+            <img src="img/menu-square-button.svg" alt="menuTrigger" class="header__menuTrigger"  >
+            <a href="index.html" class="header__logo">
+                <img src="img/logo.png" alt="logo">
+            </a>
+            <nav class="header__menu flex">
+                <ul class="header__menu__list flex">
+                    <li class="header__menuClose"><button class="header__menuCloseBtn">✖</button></li>
+                    <li class="header__menu__list__item">
+                        <a href="dance_direction.html" class="header__menu__list__item__link">Направления</a>
+                    </li>
+                    <li class="header__menu__list__item">
+                        <a href="teachers.html" class="header__menu__list__item__link">Преподаватели</a>
+                    </li>
+                    <li class="header__menu__list__item">
+                        <a href="timetable.html" class="header__menu__list__item__link">Расписание</a>
+                    </li>
+                    <li class="header__menu__list__item">
+                        <a href="" class="header__menu__list__item__link">Цены</a>
+                    </li>
+                    <li class="header__menu__list__item">
+                        <a href="" class="header__menu__list__item__link">О студии</a>
+                    </li>
+                    <li class="header__menu__list__item">
+                        <a href="" class="header__menu__list__item__link">Контакты</a>
+                    </li>
+                    <li class="header__menu__list__item">
+                        <div class="header__menu__list__item__countries flex">
+                            <a class="header__menu__list__item__countries__ru" href="">
+                                <img class="header__menu__list__item__countries__img" src="img/lang_ru.svg" alt="ru">
+                            </a>
+                            <a class="header__menu__list__item__countries__lva" href="">
+                                <img class="header__menu__list__item__countries__img" src="img/lang_lva.svg" alt="lva">
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <a class="header__menu__phone" href="tel:37120397080">
+                    <img src="img/smartphone-call.svg" alt="позвонить">
+                </a>
+                <div class="header__menu__actions flex">
+                    <div class="header__menu__actions__icons flex">
+                        <div class="header__menu__actions__icons__countries flex">
+                            <a class="header__menu__actions__icons__countries__ru" href="">
+                                <img src="img/lang_ru.svg" alt="ru">
+                            </a>
+                            <a class="header__menu__actions__icons__countries__lva" href="">
+                                <img src="img/lang_lva.svg" alt="lva">
+                            </a>
+                        </div>
+                        <div class="header__menu__actions__icons__soc">
+                            <a href="" class="header__menu__actions__icons__soc__fb">
+                                <img src="img/fb.svg" alt="fb">
+                            </a>
+                            <a href="" class="header__menu__actions__icons__soc__youtube">
+                                <img src="img/youtube.svg" alt="youtube">
+                            </a>
+                            <a href="" class="header__menu__actions__icons__soc__instagram">
+                                <img src="img/instagram.svg" alt="instagram">
+                            </a>
+                        </div>
+                    </div>
+                    <a class="header__menu__actions__button button button_size_s" data-fancybox data-src="#popup" href="javascript:;">Записаться</a></div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+<div class="headBanner flex" >
+    <div class="container flex">
+        <h1 class="headBanner__text">
+            <span class="headBanner__text__big">BAZA</span>
+            <span class="headBanner__text__medium">DANCE COMPANY</span>
+            <span class="headBanner__text__small">Больше чем танцевальная школа</span>
+        </h1>
+        <form class="contactForm" method="post" id="formx">
+            <div class="contactForm__header">ЗАПИШИСЬ НА ПРОБНЫЙ УРОК</div>
+            <input name="form_name" type="text" id="name" placeholder="Ваше имя" class="contactForm__input" required="required">
+            <input name="form_phone" type="text" id="phone" placeholder="Ваш телефон" class="contactForm__input" required="required">
+            <div class="result_form" id="results"></div>
+            <input type="submit" id="btn" value="ЗАПИСАТЬСЯ БЕСПЛАТНО" class="contactForm__input contactForm__input_type_submit">
+        </form>
+    </div>
+</div>
+<div class="nearestLesson">
+    <div class="container">
+        <h2 class="secondHeader">Ближайшие занятия</h2>
+        <div class="nearestLesson__list flex">
+            <div class="nearestLesson__list__item">
+                <div class="nearestLesson__list__item__container">
+                    <div class="nearestLesson__list__item__text">
+                       <span class="nearestLesson__list__item__text__header">HIP-HOP BEG</span>
+                       <span class="nearestLesson__list__item__text__footer">19 ИЮЛЯ <br>17:00</span>
+                    </div>
+                    <button class="button button_size_normal button_marginLeft_auto">ЗАПИСАТЬСЯ</button>
+                   </div>
+               </div>
+            <div class="nearestLesson__list__item">
+                <div class="nearestLesson__list__item__container">
+                    <div class="nearestLesson__list__item__text">
+                        <span class="nearestLesson__list__item__text__header">HIP-HOP BEG</span>
+                        <span class="nearestLesson__list__item__text__footer">19 ИЮЛЯ <br>17:00</span>
+                    </div>
+                    <button class="button button_size_normal button_marginLeft_auto">ЗАПИСАТЬСЯ</button>
+                </div>
+            </div>
+            <div class="nearestLesson__list__item">
+                <div class="nearestLesson__list__item__container">
+                    <div class="nearestLesson__list__item__text">
+                        <span class="nearestLesson__list__item__text__header">HIP-HOP BEG</span>
+                        <span class="nearestLesson__list__item__text__footer">19 ИЮЛЯ <br>17:00</span>
+                    </div>
+                    <button class="button button_size_normal button_marginLeft_auto">ЗАПИСАТЬСЯ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="teachers">
+    <div class="container">
+        <h2 class="secondHeader">наши Преподаватели</h2>
+        <div class="teachers__list">
+            <div class="teachers__item">
+                <div class="teachers__photo" style="background-image: url('img/teacher1.png')">
+                    <a href="single.html" class="teachers__link">подробнее</a>
+                </div>
+                <div class="teachers__name">Sergucci</div>
+            </div>
+            <div class="teachers__item">
+                <div class="teachers__photo" style="background-image: url('img/teacher2.png')">
+                    <a href="" class="teachers__link">подробнее</a>
+                </div>
+                <div class="teachers__name">Heorhi</div>
+            </div>
+            <div class="teachers__item">
+                <div class="teachers__photo" style="background-image: url('img/teacher3.png')">
+                    <a href="" class="teachers__link">подробнее</a>
+                </div>
+                <div class="teachers__name">Deila</div>
+            </div>
+            <div class="teachers__item">
+                <div class="teachers__photo" style="background-image: url('img/teacher4.png')">
+                    <a href="" class="teachers__link">подробнее</a>
+                </div>
+                <div class="teachers__name">Vlada</div>
+            </div>
+            <div class="teachers__item">
+                <div class="teachers__photo" style="background-image: url('img/teacher5.png')">
+                    <a href="" class="teachers__link">подробнее</a>
+                </div>
+                <div class="teachers__name">Bura-Deny</div>
+            </div>
+            <div class="teachers__item">
+                <div class="teachers__photo" style="background-image: url('img/teacher6.png')">
+                    <a href="" class="teachers__link">подробнее</a>
+                </div>
+                <div class="teachers__name">BBoy NarekTheShow</div>
+            </div>
+            <div class="teachers__item">
+                <div class="teachers__photo" style="background-image: url('img/teacher7.png')">
+                    <a href="" class="teachers__link">подробнее</a>
+                </div>
+                <div class="teachers__name">Marija Smolenkova</div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- <div class="bigSlider">
+    <div class="bigSlider__item">
+        <img class="bigSlider__item__img" src="img/slider_item1.png" alt="sliderItem">
+    </div>
+    <div class="bigSlider__item">
+        <img class="bigSlider__item__img" src="img/slider_item2.png" alt="sliderItem">
+    </div>
+    <div class="bigSlider__item">
+        <img class="bigSlider__item__img" src="img/slider_item3.png" alt="sliderItem">
+    </div>
+</div> -->
+<div class="lifeStyle">
+    <div class="container">
+        <h2 class="secondHeader">Жизнь в стиле Baza Dance Company</h2>
+        <a href="" class="lifeStyle__link link">перейти в instagram</a>
+    </div>
+    <div class="lifeStyle__list">
+        <a class="gallery" data-fancybox="images" href="img/lifeStyle__img1.png">
+            <img src="img/lifeStyle__img1.png" alt="lifeStyle__img" class="lifeStyle__list__item">
+        </a>
+        <a class="gallery" data-fancybox="images" href="img/lifeStyle__img2.png">
+            <img src="img/lifeStyle__img2.png" alt="lifeStyle__img" class="lifeStyle__list__item">
+        </a>
+        <a class="gallery" data-fancybox="images" href="img/lifeStyle__img3.png">
+            <img src="img/lifeStyle__img3.png" alt="lifeStyle__img" class="lifeStyle__list__item">
+        </a>
+        <a class="gallery" data-fancybox="images" href="img/lifeStyle__img4.png">
+            <img src="img/lifeStyle__img4.png" alt="lifeStyle__img" class="lifeStyle__list__item">
+        </a>
+        <a class="gallery" data-fancybox="images" href="img/lifeStyle__img5.png">
+            <img src="img/lifeStyle__img5.png" alt="lifeStyle__img" class="lifeStyle__list__item">
+        </a>
+    </div>
+</div>
+<div class="news">
+    <div class="container news__container">
+        <h2 class="secondHeader secondHeader_width_100">Последние новости</h2>
+        <div class="news__item">
+            <img src="img/news__img.png" alt="newsImg" class="news__item__img">
+            <div class="news__item__textBlock">
+                <h3 class="thirdHeader">Ghetto Dance Battle "From Riga to Manilla"</h3>
+                <div class="news__item__textBlock__text">11 февраля, в прекрасном городе Манила (Филиппины) прошло наше первое в этом году Ghetto Dance Battle</div>
+            </div>
+        </div>
+        <div class="news__item">
+            <img src="img/news__img.png" alt="newsImg" class="news__item__img">
+            <div class="news__item__textBlock">
+                <h3 class="thirdHeader">Ghetto Dance Battle "From Riga to Manilla"</h3>
+                <div class="news__item__textBlock__text">11 февраля, в прекрасном городе Манила (Филиппины) прошло наше первое в этом году Ghetto Dance Battle</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="signUpBanner">
+    <div class="container">
+        <div class="signUpBanner__header">
+            <h2 class="secondHeader secondHeader_color_white secondHeader_textAlign_left">Запишитесь в школу танцев Baza Dance</h2>
+            <div class="signUpBanner__header__text">Первый пробный урок - бесплатно!</div>
+        </div>
+        <div class="signUpBanner__form">
+            <div class="contactForm" method="post" id="signUpBannerForm">
+                <input name="form_name" type="text" id="signUpBannerFormName" placeholder="Ваше имя" class="contactForm__input contactForm__input_marginTop_0" required="required">
+                <input name="form_phone" type="text" id="signUpBannerFormPhone" placeholder="Ваш телефон" class="contactForm__input" required="required">
+                <div class="result_form" id="results"></div>
+                <input type="submit" id="btn" value="ЗАПИСАТЬСЯ БЕСПЛАТНО" class="contactForm__input contactForm__input_type_submit">
+            </div>
+        </div>
+        <div class="signUpBanner__footer">
+            <div class="signUpBanner__footer__text">При покупке в день пробного урока</div>
+            <div class="signUpBanner__footer__discount">Cкидка - 5€</div>
+        </div>
+    </div>
+</div>
+<div style="display: none;" id="popup">
+    <h2 class="secondHeader">Записаться на пробный урок</h2>
+    <div class="contactForm" method="post" id="signUpBannerForm">
+        <input name="form_name" type="text" id="signUpBannerFormName" placeholder="Ваше имя" class="contactForm__input contactForm__input_marginTop_0" required="required">
+        <input name="form_phone" type="text" id="signUpBannerFormPhone" placeholder="Ваш телефон" class="contactForm__input" required="required">
+        <div class="result_form" id="results"></div>
+        <input type="submit" id="btn" value="ЗАПИСАТЬСЯ БЕСПЛАТНО" class="contactForm__input contactForm__input_type_submit">
+    </div>
+</div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2175.5842964632698!2d24.149100616291275!3d56.9559231808922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eece378075eb2f%3A0x72c427836b408f4!2zSsSBxYZhIEFzYXJhIGllbGEgMTYsIExhdGdhbGVzIHByaWVrxaFwaWxzxJN0YSwgUsSrZ2EsIExWLTEwMDksINCb0LDRgtCy0LjRjw!5e0!3m2!1sru!2sru!4v1534417986852" width="100%" height="574px" frameborder="0" style="border:0" allowfullscreen></iframe>
+<footer class="footer">
+    <div class="container container_flex">
+        <div class="footer__left">
+            <a href="https://goo.gl/maps/Miwpvvmsinm" class="footer__item">
+                <img src="img/geo.svg" alt="geo" class="footer__icon">
+                <div class="footer__text">Riga, Jana Asara iela 13</div>
+            </a>
+            <a href="mailto:bazadancelv@gmail.com" class="footer__item">
+                <img src="img/mail.svg" alt="mail" class="footer__icon">
+                <div class="footer__text">bazadancelv@gmail.com</div>
+            </a>
+            <a href="tel:+37120397080" class="footer__item">
+                <img src="img/phone.svg" alt="phone" class="footer__icon">
+                <div class="footer__text">+371 20 397 080</div>
+            </a>
+        </div>
+        <div class="footer__right">
+            <div class="footer__item">
+                <div class="footer__iconGroup">    
+                    <a href="https://www.facebook.com/bazadancecompany"><img src="img/fb.svg" alt="phone" class="footer__icon"></a> 
+                    <a href="https://www.youtube.com/user/GhettoDanceTv"><img src="img/youtube.svg" alt="phone" class="footer__icon"></a>
+                    <a href="https://www.instagram.com/bazadancecompany/"><img src="img/instagram.svg" alt="phone" class="footer__icon"></a> 
+                </div>
+                <div class="footer__text">© 2015-2017 «Baza Dance Company»</div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBS_QNm351H0PbJH3yJlcaQVG0E8Mgs1o8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+<script src="js/masked_input.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/script.js" ></script>
+</body>
+</html>
